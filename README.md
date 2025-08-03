@@ -1,12 +1,46 @@
-# React + Vite
+# React Form and Table Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application demonstrating a form to add, edit, and delete entries in a table. The project uses functional components, React hooks for state management, and Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Add new entries with name and email.
+- Edit existing entries.
+- Delete entries.
+- Table only renders when there is data.
+- Responsive and clean UI using Tailwind CSS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or later recommended)
+- npm or yarn
+
+## Code Overview
+
+- `App.js` contains the main state logic and handlers for add, edit, and delete operations.
+- `components/Form.js` renders the input form and handles changes and submissions.
+- `components/Table.js` displays the data in a table with Edit and Delete buttons.
+- Tailwind CSS classes are used for styling the UI.
+
+---
+
+## Usage
+
+- Fill in the "Name" and "Email" fields and click "Add" to insert a new row.
+- Click "Edit" on any row to load its data into the form.
+- Modify the form data and click "Update" to save changes.
+- Click "Delete" to remove the row from the table.
+- The table is hidden if no entries exist.
+
+---
+
+## Tailwind CSS Setup
+
+Make sure you have Tailwind CSS configured to work with React. Your css file (e.g., `App.css`) should include:
+
